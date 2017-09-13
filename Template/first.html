@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <title>First Angular js Program
+    </title>
+    <script src="../js/angular.min.js"></script>
+</head>
+
+<body>
+    <div ng-app="">
+        Please enter your name :- <input type="text" ng-model="name"><br>
+        <p>Hello! <span ng-bind="name"></span></p>
+        <div ng-init="countries = [{locale:'en-US',name:'United States'}, {locale:'en-GB',name:'United Kingdom'}, {locale:'en-FR',name:'France'}]">
+            <ol>
+                <li ng-repeat="country in countries">
+                    {{country.name}} {{country.locale}}                
+                </li>
+            </ol>
+        </div>
+    </div>
+
+</body>
+
+</html>
